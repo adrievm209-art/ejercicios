@@ -27,17 +27,29 @@
 // }
 
 
-function sumar(...numeros) {
-    let total = 0;
+// function sumar(...numeros) {
+//     let total = 0;
 
-    for (let i = 0; i < numeros.length; i++) {
-        total = total + numeros[i];
-    }
+//     for (let i = 0; i < numeros.length; i++) {
+//         total = total + numeros[i];
+//     }
 
-    console.log("Los números ingresados son: " + numeros);
-    console.log("El resultado de la suma es: " + total);
+//     console.log("Los números ingresados son: " + numeros);
+//     console.log("El resultado de la suma es: " + total);
+// }
+
+// sumar(4, 7);
+// sumar(1, 7, 8);
+// sumar(2, 2, 3, 5);
+
+
+let frutas = ['pera', 'kiwi', 'mango', 'fresa']
+let frutasInvertidas = []
+
+for (let i = frutas.length - 1; i >= 0; i--) {
+    frutasInvertidas.push(frutas[i])
 }
 
-sumar(4, 7);
-sumar(1, 7, 8);
-sumar(2, 2, 3, 5);
+console.log(frutasInvertidas)
+
+
