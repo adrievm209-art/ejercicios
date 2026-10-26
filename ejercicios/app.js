@@ -17,11 +17,27 @@
 // console.log("El número menor es: " + me);
 // console.log("El número mayor es: " + ma);
 
-let numero = 7
 
-for (let i = 1; i <= 10; i++) {
+// let numero = 7
 
-    console.log(numero + " x " + i + " = " + (numero * i));
+// for (let i = 1; i <= 10; i++) {
 
+//     console.log(numero + " x " + i + " = " + (numero * i));
+
+// }
+
+
+function sumar(...numeros) {
+    let total = 0;
+
+    for (let i = 0; i < numeros.length; i++) {
+        total = total + numeros[i];
+    }
+
+    console.log("Los números ingresados son: " + numeros);
+    console.log("El resultado de la suma es: " + total);
 }
 
+sumar(4, 7);
+sumar(1, 7, 8);
+sumar(2, 2, 3, 5);
