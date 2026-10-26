@@ -43,13 +43,42 @@
 // sumar(2, 2, 3, 5);
 
 
-let frutas = ['pera', 'kiwi', 'mango', 'fresa']
-let frutasInvertidas = []
+// let frutas = ['pera', 'kiwi', 'mango', 'fresa']
+// let frutasInvertidas = []
 
-for (let i = frutas.length - 1; i >= 0; i--) {
-    frutasInvertidas.push(frutas[i])
-}
+// for (let i = frutas.length - 1; i >= 0; i--) {
+//     frutasInvertidas.push(frutas[i])
+// }
 
-console.log(frutasInvertidas)
+// console.log(frutasInvertidas)
 
 
+let horasRedesMundo = 2.7;
+let horasRedesColombia = 3.6;
+
+// 1. Horas acumuladas durante un año
+let horasAnuales = horasRedesColombia * 365;
+
+console.log("1. Horas al año:", horasAnuales);
+
+// 2. Días completos de 24 horas
+let diasCompletos = Math.floor(horasAnuales / 24);
+
+console.log("2. Días completos:", diasCompletos);
+
+// 3. Semanas equivalentes
+let semanas = horasAnuales / (24 * 7);
+
+console.log("3. Semanas:", semanas);
+
+// 4. Meses equivalentes de 30 días
+let meses = horasAnuales / (24 * 30);
+
+console.log("4. Meses:", meses);
+
+// 5. Días adicionales frente al promedio mundial
+let diferenciaDiaria = horasRedesColombia - horasRedesMundo;
+let diferenciaAnual = diferenciaDiaria * 365;
+let diasAdicionales = diferenciaAnual / 24;
+
+console.log("5. Días adicionales al año:", diasAdicionales);
